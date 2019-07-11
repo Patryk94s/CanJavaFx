@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.stolarczyk.can.controller.OptionsController">
+   <children>
+      <VBox layoutX="79.0" layoutY="34.0" prefHeight="250.0" prefWidth="150.0" spacing="25.0">
+         <children>
+            <Label text="Port :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Baud rate :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Data :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Parity :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Stop :">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="229.0" layoutY="37.0" prefHeight="243.0" prefWidth="212.0" spacing="20.0">
+         <children>
+            <ComboBox fx:id="comboBoxPort" prefWidth="150.0" style="-fx-background-color: Black;" stylesheets="@myCSS.css" />
+            <ComboBox fx:id="comboBoxBaudRate" prefWidth="150.0" style="-fx-background-color: black;" stylesheets="@myCSS.css" />
+            <ComboBox fx:id="comboBoxData" prefWidth="150.0" style="-fx-background-color: black;" stylesheets="@myCSS.css" />
+            <ComboBox fx:id="comboBoxParity" prefWidth="150.0" style="-fx-background-color: black;" stylesheets="@myCSS.css" />
+            <ComboBox fx:id="comboBoxStop" prefWidth="150.0" style="-fx-background-color: black;" stylesheets="@myCSS.css" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="467.0" layoutY="59.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#buttonCancelOnAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: black;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="buttonDefault" mnemonicParsing="false" onAction="#buttonDefaultClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: black;" text="Default" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="buttonClear" mnemonicParsing="false" onAction="#buttonClearOnAction" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: black;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <HBox layoutX="215.0" layoutY="311.0" prefHeight="100.0" prefWidth="204.0" spacing="50.0">
+         <children>
+            <Button fx:id="buttonStop" mnemonicParsing="false" onAction="#buttonStopClick" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: black;" text="Stop" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="buttonConnect" layoutX="93.0" layoutY="332.0" mnemonicParsing="false" onAction="#buttonConnectClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: black;" text="Connect" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
